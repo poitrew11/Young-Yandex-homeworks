@@ -33,7 +33,7 @@ def query_segment_tree(tree, node, start, end, index, x):
 def get(M, index, x, first, tree, n):
     if index < 0 or index >= len(M):
         return -1
-    return query_segment_tree(tree, 0, 0, n - 1, index, x)
+    return query_segment_tree(tree, 0, 0, n - 1, index, x) #for query
 
 def update(M, index, value, tree, n):
     if index <= len(M) and value >= 0:
